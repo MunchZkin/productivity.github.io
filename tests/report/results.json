@@ -1,0 +1,929 @@
+{
+  "run": "2026-10-12 10:41",
+  "app": "/mnt/attach/outputs/habit-tracker-github/index.html",
+  "passed": 115,
+  "failed": 0,
+  "skipped": 0,
+  "results": [
+    {
+      "id": "GEN-01",
+      "area": "GEN",
+      "requirement": "The app is one self-contained HTML file: apart from exchange-rate lookups it makes no network requests, and needs no CSS/JS/font files.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.8
+    },
+    {
+      "id": "GEN-02",
+      "area": "GEN",
+      "requirement": "No JavaScript or console errors occur on any page or tab (phone and laptop size).",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 13.4
+    },
+    {
+      "id": "GEN-03",
+      "area": "GEN",
+      "requirement": "The app loads and its buttons work with the network completely offline.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.1
+    },
+    {
+      "id": "GEN-04",
+      "area": "GEN",
+      "requirement": "The Barlow Condensed font is embedded in the file (works offline, nothing fetched from Google).",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 0.7
+    },
+    {
+      "id": "GEN-05",
+      "area": "GEN",
+      "requirement": "Apple/mobile support: viewport meta with safe-area, apple-mobile-web-app meta tags and theme colour are present.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 0.7
+    },
+    {
+      "id": "GEN-06",
+      "area": "GEN",
+      "requirement": "Dark theme: very dark page background and light text.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 0.7
+    },
+    {
+      "id": "GEN-07",
+      "area": "GEN",
+      "requirement": "No bold fonts: no visible element uses a font weight above 500, on any page.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.7
+    },
+    {
+      "id": "GEN-08",
+      "area": "GEN",
+      "requirement": "Buttons use drawn icons or text, never emoji (habit icon picker excluded).",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 7.5
+    },
+    {
+      "id": "GEN-09",
+      "area": "GEN",
+      "requirement": "Page switcher lists Habits, Planner, Budget and Journal, and the chosen page is remembered after reload.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.9
+    },
+    {
+      "id": "GEN-10",
+      "area": "GEN",
+      "requirement": "Footer carries a very small, subtle disclaimer (no responsibility, no data collected, free to use) and \"v0.2\" at the bottom right.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 0.8
+    },
+    {
+      "id": "GEN-11",
+      "area": "GEN",
+      "requirement": "If browser storage is blocked the app still loads and works in memory without errors.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.5
+    },
+    {
+      "id": "GEN-12",
+      "area": "GEN",
+      "requirement": "Add button (+) is available on Habits, Planner and Budget and hidden on Journal; each opens the right sheet.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 5.6
+    },
+    {
+      "id": "GEN-13",
+      "area": "GEN",
+      "requirement": "Works the same when the file is opened directly from disk (file://) and when hosted over http(s) as on GitHub Pages.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.0
+    },
+    {
+      "id": "DAT-01",
+      "area": "DAT",
+      "requirement": "Auto-save: every change is written to browser storage as one JSON document (habits, plan, journal, budget, plans, settings).",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.4
+    },
+    {
+      "id": "DAT-02",
+      "area": "DAT",
+      "requirement": "Reloading restores habits, planner, journal, budget and payment plans from storage.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.8
+    },
+    {
+      "id": "DAT-03",
+      "area": "DAT",
+      "requirement": "Export file: Data menu downloads a .json file containing all data.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.2
+    },
+    {
+      "id": "DAT-04",
+      "area": "DAT",
+      "requirement": "Import file: choosing a valid export replaces the current data.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.5
+    },
+    {
+      "id": "DAT-05",
+      "area": "DAT",
+      "requirement": "Import rejects an invalid file with a message and leaves existing data untouched.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.4
+    },
+    {
+      "id": "DAT-06",
+      "area": "DAT",
+      "requirement": "Budget-only export produces a CSV (with header and one row per entry); the other data is not included.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 0.7
+    },
+    {
+      "id": "DAT-07",
+      "area": "DAT",
+      "requirement": "Settings persist across reloads: habit view, sort order, week start day, exchange-rate currencies, Pomodoro lengths, budget period.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.7
+    },
+    {
+      "id": "RSP-01",
+      "area": "RSP",
+      "requirement": "No sideways page scroll on any page or tab at 320 px wide.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.6
+    },
+    {
+      "id": "RSP-02",
+      "area": "RSP",
+      "requirement": "No sideways page scroll on any page or tab at 360 px wide.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.7
+    },
+    {
+      "id": "RSP-03",
+      "area": "RSP",
+      "requirement": "No sideways page scroll on any page or tab at 390 px wide.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.5
+    },
+    {
+      "id": "RSP-04",
+      "area": "RSP",
+      "requirement": "No sideways page scroll on any page or tab at 430 px wide.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.7
+    },
+    {
+      "id": "RSP-05",
+      "area": "RSP",
+      "requirement": "No sideways page scroll on any page or tab at 768 px wide.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.7
+    },
+    {
+      "id": "RSP-06",
+      "area": "RSP",
+      "requirement": "No sideways page scroll on any page or tab at 1024 px wide.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.7
+    },
+    {
+      "id": "RSP-07",
+      "area": "RSP",
+      "requirement": "No sideways page scroll on any page or tab at 1280 px wide.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.6
+    },
+    {
+      "id": "RSP-08",
+      "area": "RSP",
+      "requirement": "No sideways page scroll on any page or tab at 1920 px wide.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.7
+    },
+    {
+      "id": "RSP-09",
+      "area": "RSP",
+      "requirement": "Live resizing: shrinking from laptop to phone width and back re-flows the layout with no sideways scroll and no reload.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 5.0
+    },
+    {
+      "id": "RSP-10",
+      "area": "RSP",
+      "requirement": "Pomodoro timer stays on a single row from 320 px upward; the three exchange rates stay on one line from 360 px upward.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.5
+    },
+    {
+      "id": "RSP-11",
+      "area": "RSP",
+      "requirement": "Budget summary shows income, expense, savings and left in a single row at every width from 320 px.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.7
+    },
+    {
+      "id": "RSP-12",
+      "area": "RSP",
+      "requirement": "Habit year view fits without side scrolling on phones.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.1
+    },
+    {
+      "id": "RSP-13",
+      "area": "RSP",
+      "requirement": "Weekly planner shows 3 days by default on phones and 7 on laptops, and the user can change the count.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.4
+    },
+    {
+      "id": "RSP-14",
+      "area": "RSP",
+      "requirement": "Sheets/dialogs: bottom sheet on phones, centred dialog on laptops; always fully inside the viewport and scrollable.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.2
+    },
+    {
+      "id": "RSP-15",
+      "area": "RSP",
+      "requirement": "Touch-friendly: main tap targets (tabs, tick buttons, toolbar buttons, + button) are at least 28 px high; form fields use 16 px text so iOS does not zoom.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.1
+    },
+    {
+      "id": "RSP-16",
+      "area": "RSP",
+      "requirement": "The + button stays inside the viewport at every width and the page keeps room below the content so it never hides the footer text.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 6.5
+    },
+    {
+      "id": "RSP-17",
+      "area": "RSP",
+      "requirement": "Content is centred and capped to a readable maximum width on very wide screens.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 0.7
+    },
+    {
+      "id": "RSP-18",
+      "area": "RSP",
+      "requirement": "Habit cards use a multi-column grid on laptops and a single column on phones.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.4
+    },
+    {
+      "id": "HAB-01",
+      "area": "HAB",
+      "requirement": "Habit views are tabs along the top in the order List (default), Week, Month, Day, Year, Statistics.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 0.8
+    },
+    {
+      "id": "HAB-02",
+      "area": "HAB",
+      "requirement": "Add a build habit with name, tags, icon and colour; it appears in the list and the header counts it.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.5
+    },
+    {
+      "id": "HAB-03",
+      "area": "HAB",
+      "requirement": "Ticking a habit today updates the header (\"1 of 1 done\"), the streak text and storage; ticking again undoes it.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.4
+    },
+    {
+      "id": "HAB-04",
+      "area": "HAB",
+      "requirement": "Quit habits: quit date, goal days and money saved per day; days since the quit date count as clean; tapping today logs a slip and restarts the streak.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.2
+    },
+    {
+      "id": "HAB-05",
+      "area": "HAB",
+      "requirement": "Tapping a habit name opens it for editing; Delete (after confirming) removes it.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.5
+    },
+    {
+      "id": "HAB-06",
+      "area": "HAB",
+      "requirement": "Tags: tag chips filter the list; typing in the tag field suggests existing tags.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.8
+    },
+    {
+      "id": "HAB-07",
+      "area": "HAB",
+      "requirement": "Sort button offers several orders and reorders the list (e.g. by name).",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.3
+    },
+    {
+      "id": "HAB-08",
+      "area": "HAB",
+      "requirement": "Week, Month and Day views each show their own visualisation and the previous/next arrows change the period.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.4
+    },
+    {
+      "id": "HAB-09",
+      "area": "HAB",
+      "requirement": "Year view shows 12 month rows with one cell per day for every habit.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.0
+    },
+    {
+      "id": "HAB-10",
+      "area": "HAB",
+      "requirement": "Statistics tab shows overview tiles and per-habit benchmark metrics.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.0
+    },
+    {
+      "id": "HAB-11",
+      "area": "HAB",
+      "requirement": "Streak maths: a habit ticked on the last 5 consecutive days (incl. today) has a streak of 5; a gap resets it.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 0.7
+    },
+    {
+      "id": "PLN-01",
+      "area": "PLN",
+      "requirement": "Planner tabs: Day, Rolling, Week, Goals, Statistics, in that order.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.3
+    },
+    {
+      "id": "PLN-02",
+      "area": "PLN",
+      "requirement": "Add a one-off task and complete it: it shows in the day list, the header reads \"x of y tasks done today\", and ticking updates it.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.6
+    },
+    {
+      "id": "PLN-03",
+      "area": "PLN",
+      "requirement": "Recurring tasks: repeat Once / Daily / chosen weekdays / Monthly; the weekday picker defaults to the current weekday and tasks only occur on the chosen days.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.3
+    },
+    {
+      "id": "PLN-04",
+      "area": "PLN",
+      "requirement": "Monthly repeat occurs on the same date each month.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 0.7
+    },
+    {
+      "id": "PLN-05",
+      "area": "PLN",
+      "requirement": "Subtasks can be added and ticked independently of the parent task.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.9
+    },
+    {
+      "id": "PLN-06",
+      "area": "PLN",
+      "requirement": "Goals: add a goal with start and target dates; link a task to it; the Goals tab lists it with a year timeline.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.7
+    },
+    {
+      "id": "PLN-07",
+      "area": "PLN",
+      "requirement": "Filter and sort: show all / hide recurring / recurring only, tag chips, and several sort orders.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.6
+    },
+    {
+      "id": "PLN-08",
+      "area": "PLN",
+      "requirement": "Week tab shows a fixed week from a chosen start day (default Monday) and the choice is remembered.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.9
+    },
+    {
+      "id": "PLN-09",
+      "area": "PLN",
+      "requirement": "Rolling view starts with today as the left-most day and loads further weeks when scrolling sideways.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.6
+    },
+    {
+      "id": "PLN-10",
+      "area": "PLN",
+      "requirement": "Weekdays and weekends have two different dark shades on every planner view (day strip, rolling, week) with a repeating 5+2 pattern.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.1
+    },
+    {
+      "id": "PLN-11",
+      "area": "PLN",
+      "requirement": "Timed tasks appear in the week/rolling grid at their hour as coloured bubbles.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.7
+    },
+    {
+      "id": "PLN-12",
+      "area": "PLN",
+      "requirement": "Planner statistics tab renders completion figures.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.6
+    },
+    {
+      "id": "PLN-13",
+      "area": "PLN",
+      "requirement": "Tags in the planner: tag chips filter the calendar, and the tag field offers suggestions from all pages.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.1
+    },
+    {
+      "id": "BUD-01",
+      "area": "BUD",
+      "requirement": "Budget layout: summary tiles above the period tabs; tabs are Week, Month, Year (default Month).",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.3
+    },
+    {
+      "id": "BUD-02",
+      "area": "BUD",
+      "requirement": "Each period has its own visualisation (week, month, year charts differ) and the summary figures follow the period.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.2
+    },
+    {
+      "id": "BUD-03",
+      "area": "BUD",
+      "requirement": "Summary maths: income, expense, savings and left are correct for a known set of entries.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.6
+    },
+    {
+      "id": "BUD-04",
+      "area": "BUD",
+      "requirement": "Summary tiles are not rebuilt or animated when a filter / same tab is chosen, never animate on period change, and do update when an entry is added.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 4.8
+    },
+    {
+      "id": "BUD-05",
+      "area": "BUD",
+      "requirement": "Entries: amount, category with colour, note, tags, date; the entry shows in the list and the header shows \"Spent \u00a3x this month\".",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.1
+    },
+    {
+      "id": "BUD-06",
+      "area": "BUD",
+      "requirement": "Generic categories with distinct colours include Rent, Salary, Savings, Investments, Groceries, Bills, Transport etc., grouped into income / savings / expense.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.6
+    },
+    {
+      "id": "BUD-07",
+      "area": "BUD",
+      "requirement": "Default currency is GBP; other currencies (incl. AED) are converted using the live rate, and the rate used is stored with the entry.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.8
+    },
+    {
+      "id": "BUD-08",
+      "area": "BUD",
+      "requirement": "Repeat options: Once, Weekly, Selected days, Every 4 weeks, Monthly, Yearly (+ Until date).",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.6
+    },
+    {
+      "id": "BUD-09",
+      "area": "BUD",
+      "requirement": "Selected days: choose any combination of weekdays (e.g. Tue + Thu); occurrences fall only on those days, starting from the entry date.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.3
+    },
+    {
+      "id": "BUD-10",
+      "area": "BUD",
+      "requirement": "Selected days with nothing chosen is refused; edits keep the chosen days.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.0
+    },
+    {
+      "id": "BUD-11",
+      "area": "BUD",
+      "requirement": "Recurrence rules: weekly = every 7 days, every 4 weeks = 28 days, monthly keeps the date (clamped to month end), yearly keeps the date; \"until\" stops it.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 0.7
+    },
+    {
+      "id": "BUD-12",
+      "area": "BUD",
+      "requirement": "Payment plan: full amount, APR, monthly payment and day; the schedule is generated until paid off; maths matches the standard amortisation formula.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.7
+    },
+    {
+      "id": "BUD-13",
+      "area": "BUD",
+      "requirement": "Extra (early) payments can be added to a plan and shorten it.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.7
+    },
+    {
+      "id": "BUD-14",
+      "area": "BUD",
+      "requirement": "Payment plans appear under \"Recurring and payment plans\" with progress and next payment.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.3
+    },
+    {
+      "id": "BUD-15",
+      "area": "BUD",
+      "requirement": "Filter popover: Show (all/spent/income/saved), Include (all/recurring/one-off), Break down by (category/tag); each changes the numbers shown.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.5
+    },
+    {
+      "id": "BUD-16",
+      "area": "BUD",
+      "requirement": "Breakdown shows every category / tag with its total amount and percentage of the whole.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.6
+    },
+    {
+      "id": "BUD-17",
+      "area": "BUD",
+      "requirement": "Tags on budget entries: chips filter the entries; the tag field suggests tags used anywhere in the app.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.2
+    },
+    {
+      "id": "BUD-18",
+      "area": "BUD",
+      "requirement": "Budget export button (CSV) is on the budget page.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.4
+    },
+    {
+      "id": "JRN-01",
+      "area": "JRN",
+      "requirement": "Journal entry: day navigation, five mood buttons, grateful-for, notes; saved automatically; word count and entries list update.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.8
+    },
+    {
+      "id": "JRN-02",
+      "area": "JRN",
+      "requirement": "Journal search filters the entries list; tiles show entries, streak, words and average mood.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.5
+    },
+    {
+      "id": "JRN-03",
+      "area": "JRN",
+      "requirement": "Hourly mood is a single scrollable row of 24 hour slots; today's current hour is the second-from-last visible slot; future hours are disabled.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.4
+    },
+    {
+      "id": "JRN-04",
+      "area": "JRN",
+      "requirement": "Arrow buttons beside the hour row scroll it; they disable at the ends.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.5
+    },
+    {
+      "id": "JRN-05",
+      "area": "JRN",
+      "requirement": "Emotion wheel: 6 core emotions in the centre ring, 18 specific emotions in the outer ring, plus 2 refinements shown as chips once one is chosen.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.5
+    },
+    {
+      "id": "JRN-06",
+      "area": "JRN",
+      "requirement": "Saving an hour stores core/secondary/tertiary/note under that date and hour; the slot shows its colour and emotion name.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.7
+    },
+    {
+      "id": "JRN-07",
+      "area": "JRN",
+      "requirement": "Clear removes an hour; a day with nothing left is removed from storage.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.3
+    },
+    {
+      "id": "JRN-08",
+      "area": "JRN",
+      "requirement": "Previous/next hour arrows inside the wheel sheet auto-save the chosen emotion and move on; Next is disabled beyond the current hour today.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 5.3
+    },
+    {
+      "id": "JRN-09",
+      "area": "JRN",
+      "requirement": "Mood curve: a chart with one dot per logged hour, a legend of the emotions used and a one-line summary (check-ins, average feeling, most frequent).",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.8
+    },
+    {
+      "id": "JRN-10",
+      "area": "JRN",
+      "requirement": "Wheel accessibility: segments are focusable buttons with labels, selectable with Enter/Space; text on every segment has readable contrast.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.3
+    },
+    {
+      "id": "JRN-11",
+      "area": "JRN",
+      "requirement": "Hourly moods are included in the export, show in the entries list (\"n mood check-ins\") and count as a journal entry.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.7
+    },
+    {
+      "id": "JRN-12",
+      "area": "JRN",
+      "requirement": "Weight: enter today's weight (decimals allowed); it is saved automatically in kg under the date, shows the change since the previous logged weight, and counts as a journal entry.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.8
+    },
+    {
+      "id": "JRN-13",
+      "area": "JRN",
+      "requirement": "Weight unit kg / lb: switching converts what is shown, storage stays in kg, and the choice is remembered (also in the exported settings).",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 4.5
+    },
+    {
+      "id": "JRN-14",
+      "area": "JRN",
+      "requirement": "Weight trend chart: one dot per logged day with a line between them, axis labels and hover values; 30 / 90 day switch changes the window.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 4.6
+    },
+    {
+      "id": "JRN-15",
+      "area": "JRN",
+      "requirement": "Calories: choose a meal (Breakfast / Lunch / Dinner / Snack), enter kcal and an optional description, Add; the total, remaining amount and progress bar update; entries can be removed; invalid amounts are refused.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.9
+    },
+    {
+      "id": "JRN-16",
+      "area": "JRN",
+      "requirement": "Calorie goal: default 2,000, editable (500-20,000) and remembered; going over the goal says so and turns the bar and chart bar amber.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.0
+    },
+    {
+      "id": "JRN-17",
+      "area": "JRN",
+      "requirement": "Calories chart: last 14 days as bars against a dashed goal line, with legend (within / over goal), hover values and a 7-day average that matches the data.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.4
+    },
+    {
+      "id": "JRN-18",
+      "area": "JRN",
+      "requirement": "Weight and calories appear in the journal entries list, are exported / imported with the data, and count towards the journal streak.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.8
+    },
+    {
+      "id": "JRN-19",
+      "area": "JRN",
+      "requirement": "Weight and calories panels fit at 320 px (no sideways scroll), sit side by side on laptops, and their fields use 16 px text so iOS does not zoom.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 4.0
+    },
+    {
+      "id": "PD-01",
+      "area": "PD",
+      "requirement": "Clock: shows the current time and date, seconds tick, AM/PM is shown separately, and the date line has no stray separators.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.0
+    },
+    {
+      "id": "PD-02",
+      "area": "PD",
+      "requirement": "Clock and Pomodoro sit in the same place on every page and are not rebuilt when switching pages.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.4
+    },
+    {
+      "id": "PD-03",
+      "area": "PD",
+      "requirement": "Pomodoro: default 25:00 focus / 5:00 break; start counts down, pause holds, reset restores, switching mode sets the other length.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 4.5
+    },
+    {
+      "id": "PD-04",
+      "area": "PD",
+      "requirement": "Pomodoro keeps running while switching between pages, and the browser tab title shows the countdown.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 4.3
+    },
+    {
+      "id": "PD-05",
+      "area": "PD",
+      "requirement": "Pomodoro lengths are adjustable 1 to 60 minutes (never above 60) and are remembered.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.4
+    },
+    {
+      "id": "PD-06",
+      "area": "PD",
+      "requirement": "Completing a focus session beeps (no error), counts \"n sessions today\" and switches to break.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.2
+    },
+    {
+      "id": "PD-07",
+      "area": "PD",
+      "requirement": "Live exchange rates: three currencies are shown under the timer with an \"updated\" time when the source answers.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.2
+    },
+    {
+      "id": "PD-08",
+      "area": "PD",
+      "requirement": "Exchange rates fall back to the next source if the first fails.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.2
+    },
+    {
+      "id": "PD-09",
+      "area": "PD",
+      "requirement": "When every source fails the row says \"offline \u00b7 tap to retry\", keeps the last known rates, and tapping retries.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.7
+    },
+    {
+      "id": "PD-10",
+      "area": "PD",
+      "requirement": "Exchange-rate currencies are chosen from three drop-downs (AED included), shown immediately and remembered.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.2
+    },
+    {
+      "id": "PD-11",
+      "area": "PD",
+      "requirement": "AED has a built-in peg (3.6725 per USD) when a source does not list it.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.5
+    },
+    {
+      "id": "PD-12",
+      "area": "PD",
+      "requirement": "Header sub-title is live per page: habits done, tasks done, spent this month, journal written.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 3.6
+    },
+    {
+      "id": "PD-13",
+      "area": "PD",
+      "requirement": "Spent-this-month in the header equals the sum of this month's expense entries (including recurring occurrences).",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.3
+    },
+    {
+      "id": "PD-14",
+      "area": "PD",
+      "requirement": "Journal tiles (entries, streak, words, average mood) are derived from stored entries.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 1.3
+    },
+    {
+      "id": "PD-15",
+      "area": "PD",
+      "requirement": "Day roll-over: when midnight passes the app re-renders so \"today\" moves on without a reload.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.3
+    },
+    {
+      "id": "PD-16",
+      "area": "PD",
+      "requirement": "Derived habit figures (streaks, completion, statistics) update immediately after ticking a habit.",
+      "status": "PASS",
+      "detail": "",
+      "seconds": 2.2
+    }
+  ]
+}

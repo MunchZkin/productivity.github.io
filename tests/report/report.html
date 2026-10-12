@@ -1,0 +1,133 @@
+<!doctype html><meta charset=utf-8><title>Test report</title><meta name=viewport content="width=device-width,initial-scale=1"><style>body{font:15px/1.4 system-ui,sans-serif;background:#0b0b0d;color:#e8e8ee;max-width:60rem;margin:0 auto;padding:1rem}h1{font-weight:400}h2{font-weight:400;font-size:1.05rem;margin:1.4rem 0 .3rem;color:#9a9aa5}table{width:100%;border-collapse:collapse}td{padding:.3rem .4rem;border-top:1px solid #222;vertical-align:top}td:first-child{width:3.4rem;font-weight:600}td:nth-child(2){width:4.5rem;color:#9a9aa5}.d{color:#ff8a8a;font-size:.85rem}.sum{font-size:1.1rem}</style>
+<h1>Test report</h1><p class=sum><b style="color:#10b981">115 passed</b> · <b style="color:#ef4444">0 failed</b> · <b style="color:#eab308">0 skipped</b> · 2026-10-12 10:41</p>
+<h2>General, platform and look</h2><table>
+<tr><td style="color:#10b981">PASS</td><td>GEN-01</td><td>The app is one self-contained HTML file: apart from exchange-rate lookups it makes no network requests, and needs no CSS/JS/font files.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>GEN-02</td><td>No JavaScript or console errors occur on any page or tab (phone and laptop size).</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>GEN-03</td><td>The app loads and its buttons work with the network completely offline.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>GEN-04</td><td>The Barlow Condensed font is embedded in the file (works offline, nothing fetched from Google).</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>GEN-05</td><td>Apple/mobile support: viewport meta with safe-area, apple-mobile-web-app meta tags and theme colour are present.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>GEN-06</td><td>Dark theme: very dark page background and light text.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>GEN-07</td><td>No bold fonts: no visible element uses a font weight above 500, on any page.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>GEN-08</td><td>Buttons use drawn icons or text, never emoji (habit icon picker excluded).</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>GEN-09</td><td>Page switcher lists Habits, Planner, Budget and Journal, and the chosen page is remembered after reload.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>GEN-10</td><td>Footer carries a very small, subtle disclaimer (no responsibility, no data collected, free to use) and &quot;v0.2&quot; at the bottom right.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>GEN-11</td><td>If browser storage is blocked the app still loads and works in memory without errors.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>GEN-12</td><td>Add button (+) is available on Habits, Planner and Budget and hidden on Journal; each opens the right sheet.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>GEN-13</td><td>Works the same when the file is opened directly from disk (file://) and when hosted over http(s) as on GitHub Pages.</td></tr>
+</table>
+<h2>Data storage, export and import</h2><table>
+<tr><td style="color:#10b981">PASS</td><td>DAT-01</td><td>Auto-save: every change is written to browser storage as one JSON document (habits, plan, journal, budget, plans, settings).</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>DAT-02</td><td>Reloading restores habits, planner, journal, budget and payment plans from storage.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>DAT-03</td><td>Export file: Data menu downloads a .json file containing all data.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>DAT-04</td><td>Import file: choosing a valid export replaces the current data.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>DAT-05</td><td>Import rejects an invalid file with a message and leaves existing data untouched.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>DAT-06</td><td>Budget-only export produces a CSV (with header and one row per entry); the other data is not included.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>DAT-07</td><td>Settings persist across reloads: habit view, sort order, week start day, exchange-rate currencies, Pomodoro lengths, budget period.</td></tr>
+</table>
+<h2>UI resizing and responsiveness</h2><table>
+<tr><td style="color:#10b981">PASS</td><td>RSP-01</td><td>No sideways page scroll on any page or tab at 320 px wide.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-02</td><td>No sideways page scroll on any page or tab at 360 px wide.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-03</td><td>No sideways page scroll on any page or tab at 390 px wide.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-04</td><td>No sideways page scroll on any page or tab at 430 px wide.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-05</td><td>No sideways page scroll on any page or tab at 768 px wide.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-06</td><td>No sideways page scroll on any page or tab at 1024 px wide.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-07</td><td>No sideways page scroll on any page or tab at 1280 px wide.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-08</td><td>No sideways page scroll on any page or tab at 1920 px wide.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-09</td><td>Live resizing: shrinking from laptop to phone width and back re-flows the layout with no sideways scroll and no reload.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-10</td><td>Pomodoro timer stays on a single row from 320 px upward; the three exchange rates stay on one line from 360 px upward.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-11</td><td>Budget summary shows income, expense, savings and left in a single row at every width from 320 px.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-12</td><td>Habit year view fits without side scrolling on phones.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-13</td><td>Weekly planner shows 3 days by default on phones and 7 on laptops, and the user can change the count.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-14</td><td>Sheets/dialogs: bottom sheet on phones, centred dialog on laptops; always fully inside the viewport and scrollable.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-15</td><td>Touch-friendly: main tap targets (tabs, tick buttons, toolbar buttons, + button) are at least 28 px high; form fields use 16 px text so iOS does not zoom.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-16</td><td>The + button stays inside the viewport at every width and the page keeps room below the content so it never hides the footer text.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-17</td><td>Content is centred and capped to a readable maximum width on very wide screens.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>RSP-18</td><td>Habit cards use a multi-column grid on laptops and a single column on phones.</td></tr>
+</table>
+<h2>Habit tracker</h2><table>
+<tr><td style="color:#10b981">PASS</td><td>HAB-01</td><td>Habit views are tabs along the top in the order List (default), Week, Month, Day, Year, Statistics.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>HAB-02</td><td>Add a build habit with name, tags, icon and colour; it appears in the list and the header counts it.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>HAB-03</td><td>Ticking a habit today updates the header (&quot;1 of 1 done&quot;), the streak text and storage; ticking again undoes it.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>HAB-04</td><td>Quit habits: quit date, goal days and money saved per day; days since the quit date count as clean; tapping today logs a slip and restarts the streak.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>HAB-05</td><td>Tapping a habit name opens it for editing; Delete (after confirming) removes it.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>HAB-06</td><td>Tags: tag chips filter the list; typing in the tag field suggests existing tags.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>HAB-07</td><td>Sort button offers several orders and reorders the list (e.g. by name).</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>HAB-08</td><td>Week, Month and Day views each show their own visualisation and the previous/next arrows change the period.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>HAB-09</td><td>Year view shows 12 month rows with one cell per day for every habit.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>HAB-10</td><td>Statistics tab shows overview tiles and per-habit benchmark metrics.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>HAB-11</td><td>Streak maths: a habit ticked on the last 5 consecutive days (incl. today) has a streak of 5; a gap resets it.</td></tr>
+</table>
+<h2>Planner and goals</h2><table>
+<tr><td style="color:#10b981">PASS</td><td>PLN-01</td><td>Planner tabs: Day, Rolling, Week, Goals, Statistics, in that order.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PLN-02</td><td>Add a one-off task and complete it: it shows in the day list, the header reads &quot;x of y tasks done today&quot;, and ticking updates it.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PLN-03</td><td>Recurring tasks: repeat Once / Daily / chosen weekdays / Monthly; the weekday picker defaults to the current weekday and tasks only occur on the chosen days.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PLN-04</td><td>Monthly repeat occurs on the same date each month.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PLN-05</td><td>Subtasks can be added and ticked independently of the parent task.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PLN-06</td><td>Goals: add a goal with start and target dates; link a task to it; the Goals tab lists it with a year timeline.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PLN-07</td><td>Filter and sort: show all / hide recurring / recurring only, tag chips, and several sort orders.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PLN-08</td><td>Week tab shows a fixed week from a chosen start day (default Monday) and the choice is remembered.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PLN-09</td><td>Rolling view starts with today as the left-most day and loads further weeks when scrolling sideways.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PLN-10</td><td>Weekdays and weekends have two different dark shades on every planner view (day strip, rolling, week) with a repeating 5+2 pattern.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PLN-11</td><td>Timed tasks appear in the week/rolling grid at their hour as coloured bubbles.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PLN-12</td><td>Planner statistics tab renders completion figures.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PLN-13</td><td>Tags in the planner: tag chips filter the calendar, and the tag field offers suggestions from all pages.</td></tr>
+</table>
+<h2>Budget tracker</h2><table>
+<tr><td style="color:#10b981">PASS</td><td>BUD-01</td><td>Budget layout: summary tiles above the period tabs; tabs are Week, Month, Year (default Month).</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-02</td><td>Each period has its own visualisation (week, month, year charts differ) and the summary figures follow the period.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-03</td><td>Summary maths: income, expense, savings and left are correct for a known set of entries.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-04</td><td>Summary tiles are not rebuilt or animated when a filter / same tab is chosen, never animate on period change, and do update when an entry is added.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-05</td><td>Entries: amount, category with colour, note, tags, date; the entry shows in the list and the header shows &quot;Spent £x this month&quot;.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-06</td><td>Generic categories with distinct colours include Rent, Salary, Savings, Investments, Groceries, Bills, Transport etc., grouped into income / savings / expense.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-07</td><td>Default currency is GBP; other currencies (incl. AED) are converted using the live rate, and the rate used is stored with the entry.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-08</td><td>Repeat options: Once, Weekly, Selected days, Every 4 weeks, Monthly, Yearly (+ Until date).</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-09</td><td>Selected days: choose any combination of weekdays (e.g. Tue + Thu); occurrences fall only on those days, starting from the entry date.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-10</td><td>Selected days with nothing chosen is refused; edits keep the chosen days.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-11</td><td>Recurrence rules: weekly = every 7 days, every 4 weeks = 28 days, monthly keeps the date (clamped to month end), yearly keeps the date; &quot;until&quot; stops it.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-12</td><td>Payment plan: full amount, APR, monthly payment and day; the schedule is generated until paid off; maths matches the standard amortisation formula.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-13</td><td>Extra (early) payments can be added to a plan and shorten it.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-14</td><td>Payment plans appear under &quot;Recurring and payment plans&quot; with progress and next payment.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-15</td><td>Filter popover: Show (all/spent/income/saved), Include (all/recurring/one-off), Break down by (category/tag); each changes the numbers shown.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-16</td><td>Breakdown shows every category / tag with its total amount and percentage of the whole.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-17</td><td>Tags on budget entries: chips filter the entries; the tag field suggests tags used anywhere in the app.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>BUD-18</td><td>Budget export button (CSV) is on the budget page.</td></tr>
+</table>
+<h2>Journal, hourly mood, emotion wheel, weight and calories</h2><table>
+<tr><td style="color:#10b981">PASS</td><td>JRN-01</td><td>Journal entry: day navigation, five mood buttons, grateful-for, notes; saved automatically; word count and entries list update.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-02</td><td>Journal search filters the entries list; tiles show entries, streak, words and average mood.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-03</td><td>Hourly mood is a single scrollable row of 24 hour slots; today&#x27;s current hour is the second-from-last visible slot; future hours are disabled.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-04</td><td>Arrow buttons beside the hour row scroll it; they disable at the ends.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-05</td><td>Emotion wheel: 6 core emotions in the centre ring, 18 specific emotions in the outer ring, plus 2 refinements shown as chips once one is chosen.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-06</td><td>Saving an hour stores core/secondary/tertiary/note under that date and hour; the slot shows its colour and emotion name.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-07</td><td>Clear removes an hour; a day with nothing left is removed from storage.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-08</td><td>Previous/next hour arrows inside the wheel sheet auto-save the chosen emotion and move on; Next is disabled beyond the current hour today.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-09</td><td>Mood curve: a chart with one dot per logged hour, a legend of the emotions used and a one-line summary (check-ins, average feeling, most frequent).</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-10</td><td>Wheel accessibility: segments are focusable buttons with labels, selectable with Enter/Space; text on every segment has readable contrast.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-11</td><td>Hourly moods are included in the export, show in the entries list (&quot;n mood check-ins&quot;) and count as a journal entry.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-12</td><td>Weight: enter today&#x27;s weight (decimals allowed); it is saved automatically in kg under the date, shows the change since the previous logged weight, and counts as a journal entry.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-13</td><td>Weight unit kg / lb: switching converts what is shown, storage stays in kg, and the choice is remembered (also in the exported settings).</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-14</td><td>Weight trend chart: one dot per logged day with a line between them, axis labels and hover values; 30 / 90 day switch changes the window.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-15</td><td>Calories: choose a meal (Breakfast / Lunch / Dinner / Snack), enter kcal and an optional description, Add; the total, remaining amount and progress bar update; entries can be removed; invalid amounts are refused.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-16</td><td>Calorie goal: default 2,000, editable (500-20,000) and remembered; going over the goal says so and turns the bar and chart bar amber.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-17</td><td>Calories chart: last 14 days as bars against a dashed goal line, with legend (within / over goal), hover values and a 7-day average that matches the data.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-18</td><td>Weight and calories appear in the journal entries list, are exported / imported with the data, and count towards the journal streak.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>JRN-19</td><td>Weight and calories panels fit at 320 px (no sideways scroll), sit side by side on laptops, and their fields use 16 px text so iOS does not zoom.</td></tr>
+</table>
+<h2>Passive / automatic data (clock, timer, exchange rates, derived figures)</h2><table>
+<tr><td style="color:#10b981">PASS</td><td>PD-01</td><td>Clock: shows the current time and date, seconds tick, AM/PM is shown separately, and the date line has no stray separators.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-02</td><td>Clock and Pomodoro sit in the same place on every page and are not rebuilt when switching pages.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-03</td><td>Pomodoro: default 25:00 focus / 5:00 break; start counts down, pause holds, reset restores, switching mode sets the other length.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-04</td><td>Pomodoro keeps running while switching between pages, and the browser tab title shows the countdown.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-05</td><td>Pomodoro lengths are adjustable 1 to 60 minutes (never above 60) and are remembered.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-06</td><td>Completing a focus session beeps (no error), counts &quot;n sessions today&quot; and switches to break.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-07</td><td>Live exchange rates: three currencies are shown under the timer with an &quot;updated&quot; time when the source answers.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-08</td><td>Exchange rates fall back to the next source if the first fails.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-09</td><td>When every source fails the row says &quot;offline · tap to retry&quot;, keeps the last known rates, and tapping retries.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-10</td><td>Exchange-rate currencies are chosen from three drop-downs (AED included), shown immediately and remembered.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-11</td><td>AED has a built-in peg (3.6725 per USD) when a source does not list it.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-12</td><td>Header sub-title is live per page: habits done, tasks done, spent this month, journal written.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-13</td><td>Spent-this-month in the header equals the sum of this month&#x27;s expense entries (including recurring occurrences).</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-14</td><td>Journal tiles (entries, streak, words, average mood) are derived from stored entries.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-15</td><td>Day roll-over: when midnight passes the app re-renders so &quot;today&quot; moves on without a reload.</td></tr>
+<tr><td style="color:#10b981">PASS</td><td>PD-16</td><td>Derived habit figures (streaks, completion, statistics) update immediately after ticking a habit.</td></tr>
+</table>
